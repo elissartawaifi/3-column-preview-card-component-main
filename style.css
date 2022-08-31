@@ -1,0 +1,162 @@
+:root{
+    /*
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+*/
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+   
+    
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray : hsl(0, 0%, 95%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 15px;
+    color:var(--transparent-white);
+    
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+}
+
+body{
+    background-color: var(--very-light-gray);
+}
+
+section{
+  display: block;
+  margin: 50px auto auto auto;
+  width: 300px;
+}
+
+.card{
+    width: 100%;
+    padding: 50px 40px 50px 35px;
+}
+
+.card img{
+    margin-bottom: 20px ;
+}
+
+.card h1{
+    margin-bottom: 10px;
+}
+
+.card p{
+    margin-bottom: 40px;
+    line-height: 2rem;
+}
+
+
+
+.card--sedans{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+
+.card--suvs{
+    background-color: var(--dark-cyan);
+}
+
+.card--luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+button{
+    
+    width: 110px;
+    height: 35px;
+   border: 2px solid var(--very-light-gray);
+   border-radius: 25px;
+   background-color: var(--very-light-gray);
+   text-align: center;
+ 
+}
+
+
+
+
+
+
+
+.card--sedans button{
+    color: var(--bright-orange);
+    
+}
+
+
+.card--suvs button{
+    color: var(--dark-cyan);
+}
+
+.card--luxury button{
+    color: var(--very-dark-cyan);
+}
+.card button:hover  {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--transparent-white);
+}
+
+
+.card div p:hover .card div {
+  
+    background-color: transparent;
+  
+}
+
+
+@media (min-width:920px) {
+    section{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+    }
+    .card{
+        margin-top: 100px;
+    }
+    .card p{
+        margin-bottom: 100px;
+        
+    }
+
+    .card--sedans{
+       
+        border-radius: 10px 0 0 10px;
+    }
+    
+
+    .card--luxury{
+       
+        border-radius: 0 10px 10px 0;
+    }
+
+   
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; color:black }
+    .attribution a { color: hsl(228, 45%, 44%); }
